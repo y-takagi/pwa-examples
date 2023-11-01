@@ -12,3 +12,15 @@ start:
 .PHONY: build
 build:
 	$(NPX) ng build
+
+.PHONY: check-format
+check-format:
+	$(NPX) prettier --check .
+
+.PHONY: format
+format:
+	$(NPX) prettier --write .
+
+.PHONY: lint
+lint:
+	$(NPX) ng lint
