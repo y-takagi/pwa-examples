@@ -24,3 +24,7 @@ format:
 .PHONY: lint
 lint:
 	$(NPX) ng lint
+
+.PHONY: test
+test:
+	$(NPX) ng test
