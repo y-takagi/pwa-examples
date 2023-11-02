@@ -1,3 +1,18 @@
+@use 'tailwindcss/base';
+@use 'tailwindcss/components';
+@use 'tailwindcss/utilities';
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    // https://github.com/tailwindlabs/tailwindcss/discussions/9993
+    // Only reason why Tailwind sets it to "solid" is so you don't have to specify border style together with "border[-x]" class.
+    // That's something we can live without.
+    border-style: none;
+  }
+}
+
 html,
 body {
   height: 100%;
