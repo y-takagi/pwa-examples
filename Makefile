@@ -7,7 +7,7 @@ install:
 
 .PHONY: start
 start:
-	$(NPX) ng start
+	$(NPX) ng serve
 
 .PHONY: format
 format:
